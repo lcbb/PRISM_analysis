@@ -1,21 +1,21 @@
-#PRISM analysis 
+# PRISM analysis 
 - program to process and analyze [PRISM](http://www.biorxiv.org/content/early/2017/02/25/111625) images of neuronal synapses 
 
 This program takes the PRISM images acquired using Perkin Elmer Opera Phenix High-Content Screening System as input, 
-1. performs drift and flatfield corrections
-2. parse images from the same well and save as individual MAT files
-3. segment the images and save the masks
-4. extract features of synapses 
+- performs drift and flatfield corrections
+- parse images from the same well and save as individual MAT files
+- segment the images and save the masks
+- extract features of synapses 
 
 Example image data will be available soon
 
 # Usage
-Change "params.parentFolderForAnalysis" in `main.m` to the location of the image folders, and run `main.m`.
+Change `params.parentFolderForAnalysis` in `main.m` to the location of the image folders, and run `main.m`.
 Processed images will be saved at 'params.outputImgsPath'
 
 # Output Data structure
 
-Each "Rep#" folder contains one biological replicate (neuronal culture, plate, or batch), total 3 batches. 
+Each `Rep#` folder contains one biological replicate (neuronal culture, plate, or batch), total 3 batches. 
 Each sub-folder `RepX-Y` contains one replicate (well) within each biological replicate, total 3 wells.
  
 * MultiplexImageData.mat: parsed, unprocessed images
@@ -33,4 +33,4 @@ Each sub-folder `RepX-Y` contains one replicate (well) within each biological re
 	
 * MultiplexImageDataAligned.mat: processed images after drift correction and flatfiel correction.
 
-* MultiplexImageAlignedTopHat.mat: same as 'MultiplexImageDataAligned.mat' but with top-hat filtering.
+* MultiplexImageAlignedTopHat.mat: same as `MultiplexImageDataAligned.mat` but with top-hat filtering.
