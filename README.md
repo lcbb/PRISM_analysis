@@ -7,11 +7,11 @@ This program takes the PRISM images acquired using Perkin Elmer Opera Phenix Hig
 - segment the images and save the masks
 - extract features of synapses 
 
-Example image data will be available soon
+Example images will be available soon
 
 # Usage
-Change `params.parentFolderForAnalysis` in `main.m` to the location of the image folders, and run `main.m`.
-Processed images will be saved at 'params.outputImgsPath'
+Unzip the files and add the folder locaton to MATLAB search path. Change `params.parentFolderForAnalysis` in `main.m` to the location of the folders with raw images, and run `main.m`.
+Processed images will be saved at the path specified by'params.outputImgsPath'. 
 
 # Output Data structure
 
