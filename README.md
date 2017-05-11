@@ -11,10 +11,10 @@ This program takes the PRISM images acquired using Perkin Elmer Opera Phenix Hig
 Example images will be available soon
 
 # Usage
-* Process PRISM images
+* Process PRISM images 
 	Unzip the files and add the folder locaton to MATLAB search path. Change `params.parentFolderForAnalysis` in `main.m` to the location of the folders with raw images, and run `main.m`.
 	Processed images will be saved at the path specified by'params.outputImgsPath'. 
-* Analysis
+* Analysis 
 	Run `synapse_t-SNE.py` for t-SNE analysis and `synapse_clustering.py` for hierachical clustering. Change `dir_path' in the script to the folder where the MAT files are located, 'fig_path' to the desired figure output path.
 
 # Output Data structure
