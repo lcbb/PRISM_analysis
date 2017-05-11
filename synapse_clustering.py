@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-This script performs hierachical clustering using Seaborn "clustermap" function
+This script performs hierarchical clustering using Seaborn "clustermap" function
 on synaptic features extracted from PRISM data. 
 The script loads the synaptic features from the MAT files, concatenates the features from 
 the same well or from the same replicate together (depending on the value of "split_wells"), 

@@ -6,7 +6,7 @@ This program takes the PRISM images acquired using Perkin Elmer Opera Phenix Hig
 - parse images from the same well and save as individual MAT files
 - segment the images and save the masks
 - extract features of synapses
-- perform t-SNE and hierachical clustering analysis on extracted synaptic features
+- perform t-SNE and hierarchical clustering analysis on extracted synaptic features
 
 Example images will be available soon
 
@@ -18,7 +18,7 @@ Example images will be available soon
 	
 * Analysis 
 
-	Run `synapse_t-SNE.py` for t-SNE analysis and `synapse_clustering.py` for hierachical clustering. Change `dir_path' in the script to the folder where the MAT files are located, 'fig_path' to the desired figure output path.
+	Run `synapse_t-SNE.py` for t-SNE analysis and `synapse_clustering.py` for hierarchical clustering. Change `dir_path' in the script to the folder where the MAT files are located, 'fig_path' to the desired figure output path.
 
 # Output Data structure
 
