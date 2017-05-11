@@ -195,13 +195,13 @@ def plot_tSNE(X, imgRoundNamesNoWO,perplexity, plotInd): # plot the t-SNE map
         plt.axis('tight')    
         plt.show()           
 #%%
-fig_path = 'E:/Google Drive/Python/figures/'  
+fig_path = 'E:/Google Drive/Python/figures/'  # change 'fig_path' to the desired figure output path. 
 plotInd = [4,6,0,1,2,3] # features that are used to color code 
 for rep_num in range(1, 4): # specify replicate number    
     split_wells = False # if "True", run t-SNE for each well in the replicate, otherwise pool data from all the wells together
     
     if rep_num == 1:
-        dir_path = "E:/data/Neuron/cortical/Broad_HCS/14days/20161021-crotalk in cells-t9-Rep2/post_processing_multicolor/"         
+        dir_path = "E:/data/Neuron/cortical/Broad_HCS/14days/20161021-crotalk in cells-t9-Rep2/post_processing_multicolor/"  # change the directory path for the MAT file       
     elif rep_num == 2:        
         dir_path = "E:/data/Neuron/cortical/Broad_HCS/14days/20161027-Rep3 and Rep4/Rep3/post_processing_multicolor/"         
     elif rep_num == 3:        

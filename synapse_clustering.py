@@ -199,12 +199,12 @@ def plot_clustergram(X, Y1, Y2, imgRoundNamesNoWO): # Alternative to sns.cluster
     fig.savefig('dendrogram.png')
      
 #%%
-fig_path = 'E:/Google Drive/Python/figures/'    
+fig_path = 'E:/Google Drive/Python/figures/'   # change 'fig_path' to the desired figure output path. 
 for rep_num in range(1, 2): # specify replicate number    
     split_wells = False # if "True", run t-SNE for each well in the replicate, otherwise pool data from all the wells together
     
     if rep_num == 1:
-        dir_path = "E:/data/Neuron/cortical/Broad_HCS/14days/20161021-crotalk in cells-t9-Rep2/post_processing_multicolor/"         
+        dir_path = "E:/data/Neuron/cortical/Broad_HCS/14days/20161021-crotalk in cells-t9-Rep2/post_processing_multicolor/"     # Change `dir_path' in the script to the folder where the MAT files are located    
     elif rep_num == 2:        
         dir_path = "E:/data/Neuron/cortical/Broad_HCS/14days/20161027-Rep3 and Rep4/Rep3/post_processing_multicolor/"         
     elif rep_num == 3:        
