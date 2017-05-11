@@ -14,7 +14,7 @@ Example images will be available soon
 * Process PRISM images 
 
 	Unzip the files and add the folder locaton to MATLAB search path. Change `params.parentFolderForAnalysis` in `main.m` to the location of the folders with raw images, and run `main.m`.
-	Processed images will be saved at the path specified by'params.outputImgsPath'. 
+	Processed images will be saved at the path specified by `params.outputImgsPath`. 
 	
 * Analysis 
 
